@@ -32,15 +32,6 @@ var createFolderGlobs = function(fileTypePatterns) {
 
 module.exports = function (grunt) {
 
-  grunt.registerTask('default', 'Testing out Grunt logging and task callbacks', ['watch']);
-
-  grunt.registerTask('fun', 'This task is for fun only', function() {
-      grunt.log.writeln('This the *fun* Grunt task');
-  });
-
-  grunt.registerTask('serious', 'This task is for serious stuff only', function() {
-      grunt.log.writeln('Wipe that smirk off your face; this is serious.');
-  });
 
   // load all grunt tasks
   require('load-grunt-tasks')(grunt);
@@ -211,7 +202,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build',['jshint','clean:before','less','dom_munger','ngtemplates','cssmin','concat','ngAnnotate','uglify','copy','htmlmin','clean:after']);
-  grunt.registerTask('serve', ['dom_munger:read','jshint','connect', 'watch']);
+  grunt.registerTask('serve', ['dom_munger:read','connect', 'watch']);
   grunt.registerTask('test',['dom_munger:read','karma:all_tests']);
 
   grunt.event.on('watch', function(action, filepath) {
@@ -251,5 +242,4 @@ module.exports = function (grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
 };

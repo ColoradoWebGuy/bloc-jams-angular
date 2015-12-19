@@ -41,7 +41,7 @@
  }
 
  body {
-     background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
+     background-image: url(app/assets/images/blurred_backgrounds/blur_bg_3.jpg);
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-position: center center;
@@ -104,7 +104,7 @@
  .hero-content {
      position: relative; /* positioning will be explained in a resource */
      min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
-     background-image: url(../assets/images/bloc_jams_bg.jpg);
+     background-image: url(app/assets/images/bloc_jams_bg.jpg);
      background-repeat: no-repeat;
      background-position: center center;
      background-size: cover;

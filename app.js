@@ -2,8 +2,20 @@ angular.module('blocJamsAngular', ['ui.bootstrap','ui.utils','ui.router','ngAnim
 
 angular.module('blocJamsAngular').config(function($stateProvider, $urlRouterProvider) {
 
+    $stateProvider.state('landing', {
+        url: '/',
+        templateUrl: 'partial/landing/landing.html'
+    })
+    .state('album', {
+        url: '/album',
+        templateUrl: 'partial/album/album.html'
+    })
+    .state('collection', {
+        url: '/collection',
+        templateUrl: 'partial/collection/collection.html'
+    });
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
 
 });
 
