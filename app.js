@@ -1,9 +1,11 @@
-angular.module('blocJamsAngular', ['ui.bootstrap','ui.utils','ui.router','ngAnimate']);
+angular.module('blocJamsAngular', ['ui.bootstrap','ui.utils','ui.router']);
+// angular.module('blocJamsAngular', ['ui.bootstrap','ui.utils','ui.router','ngAnimate']);
 
 angular.module('blocJamsAngular').config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('landing', {
         url: '/',
+        controller: 'LandingCtrl as landing',
         templateUrl: 'partial/landing/landing.html'
     })
     .state('album', {
@@ -12,8 +14,10 @@ angular.module('blocJamsAngular').config(function($stateProvider, $urlRouterProv
     })
     .state('collection', {
         url: '/collection',
+        controller: 'CollectionCtrl as collection',
         templateUrl: 'partial/collection/collection.html'
     });
+
     /* Add New States Above */
     $urlRouterProvider.otherwise('/');
 

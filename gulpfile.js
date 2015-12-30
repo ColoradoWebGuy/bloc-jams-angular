@@ -65,7 +65,7 @@ gulp.task('js', ['clean'], function() {
         .pipe(gulp.dest('dist/'));
 
 
-    /* 
+    /*
         Should be able to add to an existing stream easier, like:
         gulp.src([... partials html ...])
           .pipe(htmlmin())
@@ -111,7 +111,7 @@ gulp.task('jshint', function(){
 
 gulp.task('build', ['clean', 'css', 'js', 'indexHtml', 'images', 'fonts']);
 
-/* 
+/*
 
 -specifying clean dependency on each task is ugly
 https://github.com/robrich/orchestrator/issues/26
