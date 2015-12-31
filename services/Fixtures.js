@@ -37,11 +37,19 @@
              return albumPicasso;
          };
 
+         Fixtures.getCollection = function(numberOfAlbums) {
+             var albums = [];
+             for (var i=0; i < numberOfAlbums; i++) {
+                 albums.push(Fixtures.getAlbum(albumPicasso));
+             }
+             return albums;
+         };
+
          return Fixtures;
      }
 
      angular
-         .module('blocJams')
+         .module('blocJamsAngular')
          .factory('Fixtures', Fixtures);
 
  })();
