@@ -46,14 +46,14 @@ body {
     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
 }
 
-body.landing {
+.landing {
     background-color: rgb(58,23,63); /* sets the background color to an RGB value (see below) */
 }
 
 .navbar {
     position: relative;
     padding: 0.5rem;
-    background-color: rgba(101,18,95,0.5);
+    background-color: rgba(101,18,95,1);
     z-index: 1;
 }
 

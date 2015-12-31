@@ -10,6 +10,7 @@ angular.module('blocJamsAngular').config(function($stateProvider, $urlRouterProv
     })
     .state('album', {
         url: '/album',
+        controller: 'AlbumCtrl as album',
         templateUrl: 'partial/album/album.html'
     })
     .state('collection', {
