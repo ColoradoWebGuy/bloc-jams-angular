@@ -1,4 +1,4 @@
-![alt text](http://localhost:5000/assets/images/bloc_jams_logo.png "Bloc Jams")
+![alt text](https://intense-retreat-91135.herokuapp.com/assets/images/bloc_jams_logo.png "Bloc Jams")
 
 Bloc Jams is a music application that uses [Node.js](https://www.npmjs.com/), [Express](http://expressjs.com/), and [Bower](http://bower.io/). It allows the user to play music with interactive scroll bars and volume controls using the latest [AngularJS](https://angularjs.org/) technology.
 
